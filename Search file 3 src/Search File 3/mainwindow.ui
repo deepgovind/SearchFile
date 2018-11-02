@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>393</width>
+    <height>594</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Search File</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../SearchFile 2.0/SearchFile2/searchfile.qrc">
+    <normaloff>:/SearchFile2_App/img/Search.ico</normaloff>:/SearchFile2_App/img/Search.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLineEdit" name="FindFileTxt">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>50</y>
+      <width>391</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit#FindFileTxt{
+    background-color: #EFEFF2;
+   border-style:outset;
+     border-width: 2px;
+    border-radius: 10px;
+    border-color: black;
+    font: bold 14px;
+    min-width: 10em;
+   
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>371</width>
+      <height>8</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>sss</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="close">
+    <property name="geometry">
+     <rect>
+      <x>356</x>
+      <y>54</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> 
+border-image: url(:/close.png);</string>
+    </property>
+    <property name="text">
+     <string>Search</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="filesTable">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>90</y>
+      <width>391</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableWidget#filesTable{
+    background-color: #dddddd;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: blue;
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="autoScroll">
+     <bool>true</bool>
+    </property>
+    <property name="verticalScrollMode">
+     <enum>QAbstractItemView::ScrollPerPixel</enum>
+    </property>
+    <property name="horizontalScrollMode">
+     <enum>QAbstractItemView::ScrollPerPixel</enum>
+    </property>
+    <property name="showGrid">
+     <bool>true</bool>
+    </property>
+    <property name="gridStyle">
+     <enum>Qt::NoPen</enum>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="cornerButtonEnabled">
+     <bool>true</bool>
+    </property>
+    <property name="columnCount">
+     <number>2</number>
+    </property>
+    <attribute name="horizontalHeaderStretchLastSection">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderStretchLastSection">
+     <bool>false</bool>
+    </attribute>
+    <column/>
+    <column/>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>2</y>
+      <width>251</width>
+      <height>46</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QCheckBox" name="ChArchive">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>30</y>
+       <width>61</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Archive</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="ChDocuments">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>30</y>
+       <width>70</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>documents</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="ChOther">
+     <property name="geometry">
+      <rect>
+       <x>137</x>
+       <y>30</y>
+       <width>51</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Other</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="ChVideos">
+     <property name="geometry">
+      <rect>
+       <x>192</x>
+       <y>3</y>
+       <width>61</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Videos</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="SettingButton">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>3</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Setting</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="ChSource">
+     <property name="geometry">
+      <rect>
+       <x>136</x>
+       <y>3</y>
+       <width>51</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Source</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="ChMusic">
+     <property name="geometry">
+      <rect>
+       <x>87</x>
+       <y>30</y>
+       <width>51</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Music</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="ChImages">
+     <property name="geometry">
+      <rect>
+       <x>72</x>
+       <y>4</y>
+       <width>61</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Images</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
